@@ -17,3 +17,9 @@ def extract_numbers(numbers):
         number = number.strip()
         extracted_numbers.append(int(number))
     return extracted_numbers
+
+
+def extract_numbers_from_comma_separated(numbers: str):
+    extracted_numbers = numbers.split(",")
+    extracted_numbers = [int(number) for number in extracted_numbers]
+    return extracted_numbers
